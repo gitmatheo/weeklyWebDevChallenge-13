@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Titdale</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Damion|Roboto"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
 
-    <!-- Reset CSS -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head>
+  <title>Titdale</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Damion|Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous" />
 
-  <body>
-    <header class="header">
-      <div class="container header__container">
-        <div class="logo"><img src="./img/logo.png" /></div>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-        <ul class="nav">
-          <li class="nav__item ">
-            <a class="nav__link active" href="#">Home</a>
-          </li>
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">New here?</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Work with us</a>
-          </li>
-        </ul>
-        <div class="more">
-          <span class="float-right align-middle">More</span>
-          <i class="fas fa-bars"></i>
-        </div>
+<body>
+  <header class="header flex-col">
+    <div class="container header__container">
+      <div class="logo"><img src="./img/logo.png" /></div>
+
+      <ul class="nav">
+        <li class="nav__item ">
+          <a class="nav__link active" href="#">Home</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">New here?</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Work with us</a>
+        </li>
+      </ul>
+      <div class="more">
+        <span class="float-right align-middle">More</span>
+        <i class="fas fa-bars"></i>
       </div>
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="col-left">
-            <h2>HOW CAN WE BUILD<span>AN AMAZING SITE</span></h2>
+    </div>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="col-left">
+          <h2 class="text">HOW CAN WE BUILD<br><span class="text text--big">AN AMAZING SITE</span></h2>
 
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the.
-            </p>
-            <button class="btn btn--purple btn--bg">View Portfolio</button>
-          </div>
-          <div class="col-right"><img src="./img/woman1.png" /></div>
+          <p class="text text--desc text--sm">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry Lorem Ipsum has been the.
+          </p>
+          <button class="btn btn--purple btn--bg">View Portfolio</button>
         </div>
-      </section>
-    </header>
+        <div class="col-right"><img src="./img/woman1.png" /></div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="about flex-col">
 
-    <!-- Optional JavaScript -->
-  </body>
+      <div class="about__container flex-col text--grey">
+        <h2 class="about__h2 text--md">About BGStudio</h2>
+        <p class="about__desc--bp text--sm align-center">Lorem Ipsum is simply dummy text of the printing and
+          typesetting
+          industry.
+          Lorem
+          Ipsum has
+          been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</p>
+        <div class="wrapper">
+          <img class="about__img" src="./img/woman2.jpg" />
+          <div class="col-right grey">
+            <p class="about__desc">Curabitur tempus, velit ac molestie consectetur, metus ex vestibulum turpis, non
+              blandit libero mauris
+              non mi. Nunc egestas viverra erat, eget scelerisque nisl maximus eu. Aenean faucibus erat nec leo aliquam
+              placerat. Nulla dignissim, ante non tristique cursus, nibh odio feugiat nunc, non tempus magna ante at
+              sem. Praesent ac tortor magna. Cras eu dui mattis, mollis est et, bibendum urna. Integer bibendum id
+              ligula sit amet iaculis.</p>
+            <p class="about__desc">Mauris porta mattis feugiat. Sed commodo, massa quis tristique venenatis, risus sem
+              commodo leo, id
+              porttitor mauris purus a enim. Donec luctus neque vel pharetra maximus. Cras cursus, nisi vitae ultricies
+              euismod, ligula leo vestibulum ipsum, a mollis leo ante non quam. Phasellus nisl ipsum, iaculis aliquet
+              lectus sit amet, suscipit faucibus eros. Praesent metus turpis, porta hendrerit rutrum pretium, porta
+              quis nisi. Fusce at dolor auctor, pretium elit at, elementum lacus.</p>
+
+            <span class="about__desc text--orange">Read our Story</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="newsletter flex-col">
+      <div class="container">
+        <div class="newsletter__desc">
+          <h3>How can we build your online presence</h3>
+          <p>Lorem ipsum is simply dummy text of the printing nad typeset.</p>
+        </div>
+
+
+        <form class="form" action="">
+          <input type="text" placeholder="Enter your full name" class="input">
+          <input type="email" placeholder="Enter your email address" class="input">
+          <button type="submit" class="btn btn--md btn--orange">Get it Now!</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional JavaScript -->
+</body>
+
 </html>

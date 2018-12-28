@@ -1,17 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
 }
 
 .container {
   width: 1200px;
 }
 
-.header {
-  height: 70vh;
-  text-transform: uppercase;
-  color: white;
-  background: radial-gradient(circle, #00d9e9 25%, #00aec1 75%);
+.flex-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +20,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header {
+  height: 700px;
+  text-transform: uppercase;
+  color: white;
+  background: radial-gradient(circle, #00d9e9 25%, #00aec1 75%);
 }
 
 .header__container {
@@ -84,9 +86,10 @@ body {
 .hero {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: 600px;
   -ms-flex-line-pack: end;
       align-content: end;
+  margin-top: 100px;
 }
 
 .hero__container {
@@ -157,5 +160,99 @@ body {
   min-width: 170px;
   min-height: 40px;
   font-size: 20px;
+}
+
+.grey {
+  background-color: #f6f6f6;
+}
+
+.text {
+  font-size: 36px;
+  text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.21);
+  line-height: 1.25;
+}
+
+.text--big {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text--md {
+  font-size: 30px;
+}
+
+.text--sm {
+  font-size: 18px;
+}
+
+.text--desc {
+  margin: 25px 0;
+  text-transform: none;
+  line-height: 26px;
+}
+
+.text--grey {
+  color: #828282;
+}
+
+.text--orange {
+  color: #e46e48;
+}
+
+.about .col-right {
+  height: 335px;
+}
+
+.about__container {
+  width: 1200px;
+  height: 700px;
+  margin: 40px 0;
+}
+
+.about__h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #03c6d8;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about__img {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(42, 66, 94, 0.33);
+          box-shadow: 0px 0px 18px 0px rgba(42, 66, 94, 0.33);
+  z-index: 25;
+}
+
+.about__desc {
+  padding: 20px;
+  line-height: 22px;
+}
+
+.about__desc--bp {
+  padding: 30px;
+  line-height: 30px;
+}
+
+.newsletter {
+  height: 200px;
+  background-color: #9068be;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
