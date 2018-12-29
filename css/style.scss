@@ -6,7 +6,7 @@ $purple: #9068be;
 $orange: #e46e48;
 $cyan: #03c6d8;
 $darkcyan: #00b8cc;
-$lightgrey: #f6f6f6;
+$lightgrey: rgb(246, 246, 246);
 $grey: #838383;
 $darkgrey: #555555;
 $darkgreen: rgb(50, 108, 115);
@@ -194,9 +194,6 @@ body {
         color: $grey;
     }
 
-    &--lightgrey {
-        color: $darkgrey;
-    }
 }
 
 .bg {
@@ -212,12 +209,20 @@ body {
         background-color: $cyan;
     }
 
+    &--lightgrey {
+        background-color: $lightgrey;
+    }
+
     &--darkcyan {
         background-color: $darkcyan;
     }
 
     &--darkgreen {
         background-color: $darkgreen;
+    }
+
+    &--white {
+        background-color: white;
     }
 }
 
@@ -318,8 +323,8 @@ body {
 }
 
 .what {
-    background-color: rgb(246, 246, 246);
-    padding: 80px 0;
+    padding: 100px 0;
+
 }
 
 
@@ -382,6 +387,96 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-testimonial {
+    width: 370px;
+    height: 255px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+    margin: 20px;
+    font-style: italic;
+
+
+
+    img {
+        width: 50px;
+        margin-top: -35px;
+    }
+
+    img,
+    p {
+        padding: 5px 20px;
+    }
+
+    p {
+        line-height: 20px;
+    }
+
+    .avatar-wrapper {
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+        display: grid;
+        justify-content: center;
+        line-height: 20px;
+
+        img {
+            width: 105px;
+            height: 105px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        h4 {
+            font-size: 30px;
+            font-family: "Damion";
+            color: $purple;
+
+        }
+
+        .green {
+            font-size: 24px;
+            color: $darkcyan;
+        }
+    }
+
+
+}
+
+.col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.work {
+    height: 400px;
+    background-image: url("../img/bg.jpg");
+    color: white;
+    font-size: 24px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 80px;
+
+
+
+    .photo {
+
+
+        .photo--overlay {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            padding: 50px;
+
+            p {
+                padding: 60px 0;
+
+            }
+        }
+    }
 }
 
 

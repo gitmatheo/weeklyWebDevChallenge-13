@@ -217,10 +217,6 @@ body {
   color: #838383;
 }
 
-.text--lightgrey {
-  color: #555555;
-}
-
 .bg--purple {
   background-color: #9068be;
 }
@@ -233,12 +229,20 @@ body {
   background-color: #03c6d8;
 }
 
+.bg--lightgrey {
+  background-color: #f6f6f6;
+}
+
 .bg--darkcyan {
   background-color: #00b8cc;
 }
 
 .bg--darkgreen {
   background-color: #326c73;
+}
+
+.bg--white {
+  background-color: white;
 }
 
 .about .col-right {
@@ -334,8 +338,7 @@ body {
 }
 
 .what {
-  background-color: #f6f6f6;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .card-container {
@@ -402,5 +405,93 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.card-testimonial {
+  width: 370px;
+  height: 255px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  font-style: italic;
+}
+
+.card-testimonial img {
+  width: 50px;
+  margin-top: -35px;
+}
+
+.card-testimonial img,
+.card-testimonial p {
+  padding: 5px 20px;
+}
+
+.card-testimonial p {
+  line-height: 20px;
+}
+
+.card-testimonial .avatar-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 20px;
+}
+
+.card-testimonial .avatar-wrapper img {
+  width: 105px;
+  height: 105px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.card-testimonial .avatar-wrapper h4 {
+  font-size: 30px;
+  font-family: "Damion";
+  color: #9068be;
+}
+
+.card-testimonial .avatar-wrapper .green {
+  font-size: 24px;
+  color: #00b8cc;
+}
+
+.col-3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.work {
+  height: 400px;
+  background-image: url("../img/bg.jpg");
+  color: white;
+  font-size: 24px;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.work .photo .photo--overlay {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 50px;
+}
+
+.work .photo .photo--overlay p {
+  padding: 60px 0;
 }
 /*# sourceMappingURL=style.css.map */
