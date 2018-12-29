@@ -6,9 +6,11 @@ $purple: #9068be;
 $orange: #e46e48;
 $cyan: #03c6d8;
 $darkcyan: #00b8cc;
-$lightgray: #f6f6f6;
-$gray: #838383;
-$darkgray: #555555;
+$lightgrey: #f6f6f6;
+$grey: #838383;
+$darkgrey: #555555;
+$darkgreen: rgb(50, 108, 115);
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -168,12 +170,54 @@ body {
         line-height: 26px;
     }
 
+    &--purple {
+        color: $purple;
+    }
+
+    &--organge {
+        color: $orange;
+    }
+
+    &--cyan {
+        color: $cyan;
+    }
+
+    &--darkcyan {
+        color: $darkcyan;
+    }
+
+    &--lightgrey {
+        color: $lightgrey;
+    }
+
     &--grey {
-        color: rgb(130, 130, 130);
+        color: $grey;
+    }
+
+    &--lightgrey {
+        color: $darkgrey;
+    }
+}
+
+.bg {
+    &--purple {
+        background-color: $purple;
     }
 
     &--orange {
-        color: $orange;
+        background-color: $orange;
+    }
+
+    &--cyan {
+        background-color: $cyan;
+    }
+
+    &--darkcyan {
+        background-color: $darkcyan;
+    }
+
+    &--darkgreen {
+        background-color: $darkgreen;
     }
 }
 
@@ -191,17 +235,6 @@ body {
 
     }
 
-    &__h2 {
-        &:after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background-color: #03c6d8;
-            margin: 0 auto;
-            margin-top: 20px;
-        }
-    }
 
     &__img {
         box-shadow: 0px 0px 18px 0px rgba(42, 66, 94, 0.33);
@@ -222,6 +255,18 @@ body {
 }
 
 
+
+.headline {
+    &:after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #03c6d8;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
 
 .newsletter {
     height: 140px;
@@ -265,6 +310,68 @@ body {
 [type="email"] {
     width: 33.3%;
     height: 42px;
+}
+
+.headline {
+    margin-bottom: 30px;
+
+}
+
+.what {
+    background-color: rgb(246, 246, 246);
+    padding: 80px 0;
+}
+
+
+
+.card-container {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .card-2 {
+        width: 570px;
+        height: 295px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background: white;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+        font-size: 15px;
+
+        &__btn {
+            margin-bottom: -25px;
+        }
+
+        p {}
+
+        .circle {
+            border-radius: 50%;
+            width: 148px;
+            height: 148px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin-top: -85px;
+        }
+
+        .btn {}
+
+    }
+
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+
 }
 
 .align-center {

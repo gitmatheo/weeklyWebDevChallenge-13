@@ -193,12 +193,52 @@ body {
   line-height: 26px;
 }
 
-.text--grey {
-  color: #828282;
+.text--purple {
+  color: #9068be;
 }
 
-.text--orange {
+.text--organge {
   color: #e46e48;
+}
+
+.text--cyan {
+  color: #03c6d8;
+}
+
+.text--darkcyan {
+  color: #00b8cc;
+}
+
+.text--lightgrey {
+  color: #f6f6f6;
+}
+
+.text--grey {
+  color: #838383;
+}
+
+.text--lightgrey {
+  color: #555555;
+}
+
+.bg--purple {
+  background-color: #9068be;
+}
+
+.bg--orange {
+  background-color: #e46e48;
+}
+
+.bg--cyan {
+  background-color: #03c6d8;
+}
+
+.bg--darkcyan {
+  background-color: #00b8cc;
+}
+
+.bg--darkgreen {
+  background-color: #326c73;
 }
 
 .about .col-right {
@@ -209,16 +249,6 @@ body {
   width: 1200px;
   height: 700px;
   margin: 40px 0;
-}
-
-.about__h2:after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #03c6d8;
-  margin: 0 auto;
-  margin-top: 20px;
 }
 
 .about__img {
@@ -235,6 +265,16 @@ body {
 .about__desc--bp {
   padding: 30px;
   line-height: 30px;
+}
+
+.headline:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #03c6d8;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .newsletter {
@@ -287,6 +327,65 @@ body {
 [type="email"] {
   width: 33.3%;
   height: 42px;
+}
+
+.headline {
+  margin-bottom: 30px;
+}
+
+.what {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+
+.card-container {
+  height: 300px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.card-container .card-2 {
+  width: 570px;
+  height: 295px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+  font-size: 15px;
+}
+
+.card-container .card-2__btn {
+  margin-bottom: -25px;
+}
+
+.card-container .card-2 .circle {
+  border-radius: 50%;
+  width: 148px;
+  height: 148px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -85px;
+}
+
+.card-container h2 {
+  font-size: 24px;
 }
 
 .align-center {
