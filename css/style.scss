@@ -461,6 +461,7 @@ body {
 
 
 
+
     .photo {
 
 
@@ -477,6 +478,48 @@ body {
             }
         }
     }
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-top: 3px solid $orange;
+    background-color: rgb(1, 30, 34);
+    color: $lightgrey;
+    font-size: 13px;
+
+
+    &__menu {
+        // background: yellowgreen;
+
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            // grid-template-columns: repeat(7, 10%);
+
+
+            li {
+                border-right: 1px solid $lightgrey;
+                padding: 0 20px;
+                cursor: pointer;
+            }
+        }
+
+        .social {
+            font-size: 25px;
+        }
+    }
+
 }
 
 

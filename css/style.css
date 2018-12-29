@@ -494,4 +494,54 @@ body {
 .work .photo .photo--overlay p {
   padding: 60px 0;
 }
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  border-top: 3px solid #e46e48;
+  background-color: #011e22;
+  color: #f6f6f6;
+  font-size: 13px;
+}
+
+.footer__menu {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__menu ul li {
+  border-right: 1px solid #f6f6f6;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.footer__menu .social {
+  font-size: 25px;
+}
 /*# sourceMappingURL=style.css.map */
