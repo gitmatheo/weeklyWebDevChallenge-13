@@ -12,6 +12,7 @@ $darkgray: #555555;
 
 body {
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -223,9 +224,47 @@ body {
 
 
 .newsletter {
-    height: 200px;
+    height: 140px;
     background-color: $purple;
-    &__desc
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1.57fr;
+
+    }
+
+    &__desc {
+
+        color: white;
+        padding: 5px 0;
+
+        h3 {
+            align-self: start;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 5px 0;
+        }
+
+        p {
+            align-self: start;
+            font-size: 14px;
+            padding: 9px 0;
+
+
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+[type="text"],
+[type="email"] {
+    width: 33.3%;
+    height: 42px;
 }
 
 .align-center {

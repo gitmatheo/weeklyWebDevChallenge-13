@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -236,8 +238,55 @@ body {
 }
 
 .newsletter {
-  height: 200px;
+  height: 140px;
   background-color: #9068be;
+}
+
+.newsletter__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.57fr;
+      grid-template-columns: 1fr 1.57fr;
+}
+
+.newsletter__desc {
+  color: white;
+  padding: 5px 0;
+}
+
+.newsletter__desc h3 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.newsletter__desc p {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 14px;
+  padding: 9px 0;
+}
+
+.newsletter__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[type="text"],
+[type="email"] {
+  width: 33.3%;
+  height: 42px;
 }
 
 .align-center {
